@@ -6,6 +6,10 @@
 |------|---|
 |고다혜|[@KodaHye](https://github.com/KodaHye)|
 |배수빈|[@baexxbin](https://github.com/baexxbin)|
+|백제완|[@baexxbin](https://github.com/Jewan1120)|
+|이예진|[@baexxbin](https://github.com/yeahdy)|
+|이혜원|[@baexxbin](https://github.com/icegosimperson)|
+
 
 <br>
 <br>
