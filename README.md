@@ -2,13 +2,14 @@
 
 ## 👨‍💻 스터디원
 
-|이름|깃허브|
-|------|---|
-|고다혜|[@KodaHye](https://github.com/KodaHye)|
-|배수빈|[@baexxbin](https://github.com/baexxbin)|
-|백제완|[@baexxbin](https://github.com/Jewan1120)|
-|이예진|[@baexxbin](https://github.com/yeahdy)|
-|이혜원|[@baexxbin](https://github.com/icegosimperson)|
+| 이름  |깃허브|
+|-----|---|
+| 고다혜 |[@KodaHye](https://github.com/KodaHye)|
+| 배수빈 |[@baexxbin](https://github.com/baexxbin)|
+| 백제완 |[@Jewan1120](https://github.com/Jewan1120)|
+| 이예진 |[@yeahdy](https://github.com/yeahdy)|
+| 이지영 |[@yeongleej](https://github.com/yeongleej)|
+| 이혜원 |[@icegosimperson](https://github.com/icegosimperson)|
 
 
 <br>
