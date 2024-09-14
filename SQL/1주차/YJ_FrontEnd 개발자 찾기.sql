@@ -1,5 +1,6 @@
 -- 문제: https://school.programmers.co.kr/learn/courses/30/lessons/276035
--- 개발자의 ID, 이메일, 이름, 성을 조회 + ID를 기준으로 오름차순 정렬
+-- 요구사항: 개발자의 ID, 이메일, 이름, 성을 조회 + ID를 기준으로 오름차순 정렬
+
 SELECT
     D.ID, D.EMAIL, D.FIRST_NAME,  D.LAST_NAME
 FROM DEVELOPERS AS D
@@ -9,10 +10,7 @@ WHERE S.CATEGORY = 'Front End'
 GROUP BY D.ID, D.EMAIL, D.FIRST_NAME,  D.LAST_NAME
 ORDER BY D.ID;
 
--- SELECT S.CATEGORY,  S.CODE
--- FROM SKILLCODES AS S
--- WHERE S.CATEGORY = 'Front End'
-
+-- 참고
 -- 비트 AND연산 (10진수 & 10진수)
 -- 400 & 16 (110010000 & 10000)
 -- 결과: 16 (10000)

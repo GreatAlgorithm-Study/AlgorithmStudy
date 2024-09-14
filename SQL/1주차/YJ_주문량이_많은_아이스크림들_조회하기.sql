@@ -1,9 +1,5 @@
 -- 문제: https://school.programmers.co.kr/learn/courses/30/lessons/133027
-
--- FIRST_HALF 테이블 PK: FLAVOR, FK: SHIPMENT_ID
--- JULY 테이블 PK: SHIPMENT_ID FK: FLAVOR
--- 상위 3개 FLAVOR
--- 맛별로 (7월 아이스크림 총 주문량+상반기의 아이스크림 총 주문량)
+-- 요구사항: 상위 3개 FLAVOR 맛별로 (7월 아이스크림 총 주문량+상반기의 아이스크림 총 주문량)
 SELECT
     JULY.FLAVOR
 FROM JULY
@@ -16,3 +12,7 @@ FROM JULY
 GROUP BY FLAVOR
 ORDER BY SUM(JULY.TOTAL_ORDER+FH.T_O) DESC
 LIMIT 3;
+
+-- 참고
+-- FIRST_HALF 테이블 PK: FLAVOR, FK: SHIPMENT_ID
+-- JULY 테이블 PK: SHIPMENT_ID FK: FLAVOR
