@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 // 현재 순서 중에서 이미 증가하는 부분 수열을 최대한 유지 + 나머지 요소 이동
 public class HW_2631 {
-    public static int N =0;
     public static void main(String[] args) {
-        // 1) 아이들 N명 입력 받음
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt(); // 아이들 수 N
         int[] A = new int[N]; // 인덱스마다 각 입력값
