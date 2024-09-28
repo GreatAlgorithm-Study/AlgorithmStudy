@@ -9,6 +9,7 @@ import java.util.*;
  * - 한컨씩 전진 했을 떼 "가장 앞에 있는 트럭"이 다리의 길이까지 왔다면 다리에서 탈출한다
  * - 다리 최대하중 이하일때만 트럭이 다리에 올라올 수 있다
  * - 한번의 반복이 시간 +1
+ * 참고: https://dy-coding.tistory.com/entry/%EB%B0%B1%EC%A4%80-13335%EB%B2%88-%ED%8A%B8%EB%9F%AD-java
  */
 public class YJ_13335 {
     public static void main(String[] args) {
@@ -48,9 +49,9 @@ public class YJ_13335 {
             int idx = truck.index;
             int weight = truck.weight;
 
-            if(!bridge.isEmpty()){  //O(N) > 최악의 경우 다리에 있는 모든 트럭이 이동
+            if(!bridge.isEmpty()){
                 int start = bridge.peek().index;    //★다리 위에 있는 가장 앞에 있는 트럭의 인덱스
-                for(int i = start; i<idx; i++){ //★새로 올라가려는 트럭의 인덱스 idx 전까지 다리 위에 있는 트럭들이 한 칸씩 전진
+                for(int i = start; i<idx; i++){ //O(logN)★새로 올라가려는 트럭의 인덱스 idx 전까지 다리 위에 있는 트럭들이 한 칸씩 전진
                     moveCount[i]--;
                 }
 
