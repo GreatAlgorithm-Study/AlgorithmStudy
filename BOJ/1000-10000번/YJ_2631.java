@@ -28,6 +28,7 @@ public class YJ_2631 {
 
     static int getMinChanged(int children,int[] line){
         int [] dp = new int[children];
+        int lis = 0;
         for(int i=0; i<children; i++){
             dp[i] = 1;  //최소값 1
             for(int j=0; j<i; j++){
@@ -37,8 +38,8 @@ public class YJ_2631 {
                     dp[i] = dp[j]+1;
                 }
             }
+            lis = Math.max(lis,dp[i]);
         }
-        Arrays.sort(dp);    //오름차순 정렬 시 마지막 수가 최장 정렬 수
-        return children - dp[children-1];
+        return children - lis;
     }
 }
