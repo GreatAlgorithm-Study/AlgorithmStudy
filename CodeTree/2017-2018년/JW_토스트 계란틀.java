@@ -96,9 +96,7 @@ public class Main {
         if (isValid(ny, nx) && !visited[ny][nx]) {
             // 차이가 l이상 r이하
             int diff = Math.abs(toast[y][x] - toast[ny][nx]);
-            if (l <= diff && diff <= r) {
-                return true;
-            }
+            return l <= diff && diff <= r;
         }
         return false;
     }
