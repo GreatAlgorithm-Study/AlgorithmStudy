@@ -55,8 +55,8 @@ public class DH_4386 {
         else if(rank[a] > rank[b]) p[b] = a;
         // rank가 같다면, 한 쪽 rank 늘려주고 거기에 붙이기
         else {
+            p[b] = a;
             rank[a]++;
-            p[a] = b;
         }
     }
 
