@@ -64,6 +64,6 @@ public class Main {
 
     // 별과 별 사이의 거리 계산
     private static double calDistance(double[] A, double[] B) {
-        return Math.abs(Math.sqrt(Math.pow(B[0] - A[0], 2) + Math.pow(B[1] - A[1], 2)));
+        return Math.sqrt(Math.pow(B[0] - A[0], 2) + Math.pow(B[1] - A[1], 2));
     }
 }
