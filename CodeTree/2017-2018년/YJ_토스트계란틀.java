@@ -90,27 +90,27 @@ public class YJ_토스트계란틀 {
         }
 
 
-        visited = new boolean[N][N];
         int moveCount = 0;
         boolean isMoved = false;
         do {
-            init();
+            visited = new boolean[N][N];
             for (int x = 0; x < N; x++) {
                 for (int y = 0; y < N; y++) {
-                    if (!visited[x][y]) {
-                        eggGroup = new ArrayList<>();
-                        //계란 하나당 bfs 탐색
-                        Egg egg = new Egg(x, y);
-                        queue.offer(egg);
-                        eggGroup.add(egg);
-                        visited[x][y] = true;
+                    if (visited[x][y]) {
+                        continue;
+                    }
+                    eggGroup = new ArrayList<>();
+                    //계란 하나당 bfs 탐색
+                    Egg egg = new Egg(x, y);
+                    queue.offer(egg);
+                    eggGroup.add(egg);
+                    visited[x][y] = true;
 
-                        bfs();
+                    bfs();
 
-                        if (eggGroup.size() > 1) {
-                            mergeEggs();
-                            isMoved = true;
-                        }
+                    if (eggGroup.size() > 1) {
+                        mergeEggs();
+                        isMoved = true;
                     }
                 }
             }
@@ -123,14 +123,6 @@ public class YJ_토스트계란틀 {
             isMoved = false;
         } while (true);
         System.out.println(moveCount);
-    }
-
-    static void init(){
-        for(int i = 0; i < N; i++){
-            for(int j = 0; j < N; j++){
-                visited[i][j] = false;
-            }
-        }
     }
 
 }

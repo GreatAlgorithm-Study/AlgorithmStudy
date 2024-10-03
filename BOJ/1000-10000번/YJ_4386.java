@@ -16,11 +16,11 @@ import java.util.*;
 public class YJ_4386 {
 
     static class Star implements Comparable<Star> {
-        double first;
-        double second;
+        int first;
+        int second;
         double distance;
 
-        Star(double first, double second, double distance) {
+        Star(int first, int second, double distance) {
             this.first = first;
             this.second = second;
             this.distance = distance;
@@ -65,8 +65,8 @@ public class YJ_4386 {
         int count = n-1;    //최소신장트리의 노선 수는 N-1
         while(!queue.isEmpty() && count>0){
             Star star = queue.poll();
-            int first = (int) star.first;
-            int second = (int) star.second;
+            int first = star.first;
+            int second = star.second;
             if(union(parent,first,second)){
                 totalDistance += star.distance;
                 count--;
