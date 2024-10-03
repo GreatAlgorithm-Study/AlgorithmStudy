@@ -1,4 +1,4 @@
-// 시간 복잡도 : 주어진 내에서 구현 가능 
+// 시간 복잡도 : 주어진 내에서 구현 가능
 
 import java.util.*;
 import java.io.*;
@@ -13,17 +13,14 @@ class Solution {
             dp[puddles[i][1]][puddles[i][0]] = -1;
         }
         dp[1][1] = 1; // (1, 1) 설정
-        
+
         for(int i=1; i<n+1; i++){
             for(int j=1; j<m+1; j++){
                 if(dp[i][j] == -1){ // 물에 잠긴 지역이라면
                     dp[i][j] = 0;
                     continue;
                 }
-                if(1 < i) dp[i][j] += dp[i-1][j] % mod; // 위쪽에서 오는 경우의 수
-                if(1 < j) dp[i][j] += dp[i][j-1] % mod; // 왼쪽에서 오는 경우의 수
-                
-                dp[i][j] %= mod;
+                dp[i][j] += (dp[i-1][j]+dp[i][j-1])%MOD;
             }
         }
 
