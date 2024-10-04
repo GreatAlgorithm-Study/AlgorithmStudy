@@ -13,12 +13,9 @@ class Solution {
         for(int right = people.length -1; right>= left; right--){
             if(people[left] + people[right] <= limit){ // 2명 태울 수 있는 경우
                 left++;
-                answer++;
             }
             // 1명만 태울 수 있는 경우
-            else{
-                answer++;
-            }
+            answer++;
         }
         return answer;
     }
