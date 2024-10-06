@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-- SQL 문제 링크 첨부하기
-- 코멘트 템플릿 하단 텍스트 복사해서 사용 해 주세요!
+- SQL 유형: `SELECT` `SUM,MAX,MIN` `GROUP BY` `IS NULL` `JOIN` `String,Date` `OVER()` `REGEX` 유형 중 택 1
+- 코멘트 템플릿 하단 텍스트 복사해서 사용 해 주세요💌
 
 ```text
 ## 문제: [문제명](링크)
