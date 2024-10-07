@@ -43,6 +43,7 @@ public class Main {
         N = Integer.parseInt(st.nextToken());
         g = new int[N+1][N+1];
 
+        // 각 학생의 좋아하는 사람 리스트 
         srr = new ArrayList[N*N+1];
         for(int s=0; s<N*N+1; s++) {
             srr[s] = new ArrayList<>();
