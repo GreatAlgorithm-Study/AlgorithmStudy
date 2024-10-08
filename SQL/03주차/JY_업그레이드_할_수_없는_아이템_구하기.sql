@@ -1,0 +1,9 @@
+-- 업그레이드 할 수 없는 아이템 구하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/273712
+
+SELECT I.ITEM_ID, ITEM_NAME, RARITY
+FROM ITEM_INFO I
+LEFT JOIN ITEM_TREE T
+ON I.ITEM_ID = T.PARENT_ITEM_ID
+WHERE PARENT_ITEM_ID IS NULL
+ORDER BY I.ITEM_ID DESC
