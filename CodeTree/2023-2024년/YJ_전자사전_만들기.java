@@ -6,7 +6,7 @@ import java.io.*;
  * 시간복잡도: 1 ≤ N ≤ 100,000 → 10^5 으로 `O(NlogN)` 이내로 풀이하기
  */
 public class YJ_전자사전_만들기 {
-    static List<String> original = new ArrayList<>();
+    static Map<String,Integer> original = new HashMap<>();
     static String[] dictionary = null;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +18,7 @@ public class YJ_전자사전_만들기 {
         for(int i=0; i<N; i++){
             String word = br.readLine();
             dictionary[i] = word;
-            original.add(word);
+            original.put(word,i+1);
         }
         Arrays.sort(dictionary);
 
@@ -40,7 +40,7 @@ public class YJ_전자사전_만들기 {
             //k 번째 단어 찾기
             String word  = findWord(start,end,k);
             //k번째 단어의 입력순서 찾기
-            int orderNo = word.isEmpty()? -1 : original.indexOf(word) +1;
+            int orderNo = word.isEmpty()?-1:original.get(word);
             System.out.println(orderNo);
         }
 
