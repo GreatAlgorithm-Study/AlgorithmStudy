@@ -115,6 +115,7 @@ public class YJ_놀이기구_탑승 {
         return new Student(currentX,currentY,likeCount,blanckCount);
     }
 
+    static int[] scoreBoard = {0,1,10,100,1000};
     static int calculateScore(int currentX, int currentY){
         int friendCount = 0;
         List<Integer> likes = likeStudents.get(ride[currentX][currentY]);
@@ -128,21 +129,7 @@ public class YJ_놀이기구_탑승 {
                 friendCount++;
             }
         }
-        return getScore(friendCount);
-    }
-
-    private static int getScore(int friendCount){
-        switch (friendCount){
-            case 1:
-                return 1;
-            case 2:
-                return 10;
-            case 3:
-                return 100;
-            case 4:
-                return 1000;
-        }
-        return 0;
+        return scoreBoard[friendCount];
     }
 
     private static boolean stop(int x, int y){
