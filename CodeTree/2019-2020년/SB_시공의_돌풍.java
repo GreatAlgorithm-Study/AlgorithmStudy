@@ -132,6 +132,7 @@ public class SB_시공의_돌풍 {
         for (int t = 0; t < T; t++) {
             // 1. 먼지 확산
             diffusion();
+            
             // 2. 돌풍 청소
             cleanUp();
             cleanDown();
