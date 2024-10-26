@@ -1,0 +1,7 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/144855
+SELECT a.CATEGORY, SUM(b.SALES) AS TOTAL_SALES
+FROM BOOK a
+         JOIN BOOK_SALES b ON a.BOOK_ID=b.BOOK_ID
+WHERE b.SALES_DATE LIKE '2022-01%'
+GROUP BY a.CATEGORY
+ORDER BY a.CATEGORY;
