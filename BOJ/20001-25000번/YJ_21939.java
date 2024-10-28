@@ -1,38 +1,39 @@
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Scanner;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
+import java.io.*;
 
 public class YJ_21939 {
     static TreeMap<Integer, TreeSet<Integer>> workbook = new TreeMap<>();  //<난이도,문제번호>
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
+
+        int N = Integer.parseInt(br.readLine());
         for (int i = 0; i < N; i++) {
-            int number = scanner.nextInt();
-            int difficulty = scanner.nextInt();
+            st = new StringTokenizer(br.readLine());
+            int number = Integer.parseInt(st.nextToken());
+            int difficulty = Integer.parseInt(st.nextToken());
             workbook.computeIfAbsent(difficulty, set -> new TreeSet<>())
                     .add(number);
         }
 
-        while (scanner.hasNext()) {
-            String say = scanner.next();
+        int M = Integer.parseInt(br.readLine());
+        while (M-- > 0) {
+            st = new StringTokenizer(br.readLine());
+            String say = st.nextToken();
             switch (say) {
                 case "recommend":
-                    recommend(scanner.nextInt());
+                    recommend(Integer.parseInt(st.nextToken()));
                     break;
                 case "add":
-                    add(scanner.nextInt(), scanner.nextInt());
+                    add(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));
                     break;
                 case "solved":
-                    solved(scanner.nextInt());
+                    solved(Integer.parseInt(st.nextToken()));
                     break;
             }
         }
 
-        scanner.close();
+        br.close();
     }
 
     static void recommend(int difficulty) {
@@ -49,7 +50,7 @@ public class YJ_21939 {
     }
 
     static void solved(int number) {
-        Iterator<Entry<Integer, TreeSet<Integer>>> iterator = workbook.entrySet().iterator();
+        Iterator<Map.Entry<Integer, TreeSet<Integer>>> iterator = workbook.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<Integer, TreeSet<Integer>> entry = iterator.next();
             if (entry.getValue().remove(number)) {
