@@ -51,7 +51,6 @@ public class YJ_20007 {
     }
 
     static void shareMochi (int index){
-        int days = 0;
         PriorityQueue<Pos> road = new PriorityQueue<>();
 
         table[index] = 0;
