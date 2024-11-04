@@ -1,5 +1,26 @@
 # AlgorithmStudy
 
+<br>
+
+## ✨🔫 8주차 말썽꾸러기 명단 🔫✨
+<table>
+    <tr>
+        <td height="140px" align="center">
+            <a href="https://github.com/Jewan1120">
+                <img src="https://avatars.githubusercontent.com/Jewan1120" width="140px" /> 
+                <br><br> 🤪 백제완 
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <strong>치킨은 제가 사겠습니다</strong><br>
+        </td>
+    </tr>
+</table>
+
+<br>
+
 ## 👨‍💻 스터디원
 
 | 이름  |깃허브|
