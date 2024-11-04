@@ -4,7 +4,7 @@
 // 징검다리를 건널 수 있는 최대 니니즈 친구들의 수 구하기
 // 한명씩 징검다리를 건너는 경우하여 돌을 줄이는 과정 -> 시간초과
 // 이분탐색으로 특정 인원이 건널 수 있는지 여부만 확인
-class Solution {
+class HW_64062 {
     public int solution(int[] stones, int k) {
         int answer = 0;
         int start = 0;
