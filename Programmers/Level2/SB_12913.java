@@ -1,4 +1,4 @@
-class Solution {
+class SB_12913 {
     int solution(int[][] land) {
         int N = land.length;
         int[][] dp = new int[N][4];

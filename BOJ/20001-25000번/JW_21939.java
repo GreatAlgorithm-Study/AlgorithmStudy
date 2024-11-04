@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-public class BOJ410 {
+public class JW_21939 {
 
     static class Problem {
         int num, level;

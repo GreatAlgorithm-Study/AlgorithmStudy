@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class JW_1477 {
 
     static int n, m, l;
     static int[] arr;

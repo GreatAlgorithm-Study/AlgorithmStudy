@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_150369 {
     public long solution(int cap, int n, int[] deliveries, int[] pickups) {
         long answer = 0;
         

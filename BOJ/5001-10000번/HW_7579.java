@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 // 비활성 메모리 추가 비용을 최소화 하는 문제
 // 메모리 나눌 수 없음 -> 완전 배낭 문제 -> dp
 
-public class Main {
+public class HW_7579 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

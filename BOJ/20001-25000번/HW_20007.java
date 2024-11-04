@@ -8,7 +8,7 @@ import java.util.*;
 // 시간복잡도 : N<=1,000, M<=100,000 O(NM) 가능
 // 이웃집 모두에 떡을 돌리기 위한 최소 일을 출력
 // 만약 모두 방문할수 없으면 -1을 출력
-public class Main {
+public class HW_20007 {
     static class Node implements Comparable<Node>{
         int house;
         int cost;

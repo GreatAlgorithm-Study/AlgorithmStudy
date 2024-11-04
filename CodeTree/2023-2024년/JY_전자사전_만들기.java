@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Main {
+public class JY_전자사전_만들기 {
 
     static int N, T;
     static Map<String, Integer> sMap;

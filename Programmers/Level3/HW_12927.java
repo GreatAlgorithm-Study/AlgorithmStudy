@@ -2,7 +2,7 @@ import java.util.*;
 
 // n : 퇴근시간까지 남은 시간
 // works : 작업량
-class Solution {
+class HW_12927 {
     public long solution(int n, int[] works) {
         long answer = 0; // 야근 피로도 = 시작한 시점에서 (남은 일의 작업량)^2
         PriorityQueue<Integer> Queue = new PriorityQueue<>(Comparator.reverseOrder()); // 높은 숫자 우선순위 큐 정의

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_방화벽_설치하기 {
 
     static int n, m;
     static int[][] board; // 방 구조를 나타낼 2차원 배열

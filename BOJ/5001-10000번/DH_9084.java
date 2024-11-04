@@ -5,7 +5,7 @@ import java.util.*;
  * 동전
  */
 
-public class BOJ9084 {
+public class DH_9084 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;

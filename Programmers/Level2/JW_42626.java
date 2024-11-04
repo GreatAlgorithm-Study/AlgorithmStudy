@@ -1,5 +1,5 @@
 import java.util.PriorityQueue;
-class Solution {
+class JW_42626 {
     public int solution(int[] scoville, int K) {
         int answer = 0;
         // 우선순위 큐를 이용해서 최소 힙 구현

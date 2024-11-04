@@ -1,4 +1,4 @@
-public class Main {
+public class JW_2805 {
 
     static int n, m;
     static int[] arr;

@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 // 모든 물웅덩이들을 덮기 위해 필요한 널빤지들의 최소 개수를 출력
 // 시작 위치로부터 순서대로(->정렬) 물웅덩이를 덮어 나가기 -> 그리디
-public class Main {
+public class HW_1911 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

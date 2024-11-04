@@ -5,7 +5,7 @@ import java.util.*;
 
 // 놀이기구 탑승
 // 주어진 순서대로 학생을 좋아하는 학생 옆에 앉히기
-public class Main {
+public class HW_놀이기구_탑승 {
     static int n; // 격자 모양
     static int[][] map;
     static ArrayList<Integer>[] likestudents; // 학생별 좋아하는 학생 : 4명 (크기 고정, 중복X)

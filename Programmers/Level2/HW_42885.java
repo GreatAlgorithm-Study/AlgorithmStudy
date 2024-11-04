@@ -4,7 +4,7 @@ import java.io.*;
 
 // 문제 목표 : 모든 사람을 구출하기 위해 필요한 구명보트 개수의 최솟값
 // 최선의 선택 : 가장 무거운 사람을 먼저 태움
-class Solution {
+class HW_42885 {
     public int solution(int[] people, int limit) {
         int answer = 0;
         Arrays.sort(people); // 오름차순

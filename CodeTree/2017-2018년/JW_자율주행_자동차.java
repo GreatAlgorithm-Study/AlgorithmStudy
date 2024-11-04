@@ -1,4 +1,4 @@
-public class Main {
+public class JW_자율주행_자동차 {
 
     static int n, m;                        // 세로, 가로
     static boolean[][] board;               // 차가 움직일 보드

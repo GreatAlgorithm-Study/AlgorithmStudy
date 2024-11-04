@@ -2,7 +2,7 @@
 // 시간 복잡도 : n, m<= 10^9
 // 모든 사람이 심사를 받는데 걸리는 시간의 최솟값
 import java.util.*;
-class Solution {
+class HW_43238 {
     public long solution(int n, int[] times) {
         long answer = 0;
         Arrays.sort(times);

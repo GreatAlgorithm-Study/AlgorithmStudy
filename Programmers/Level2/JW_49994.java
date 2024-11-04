@@ -1,4 +1,4 @@
-class Solution {
+class JW_49994 {
     boolean[][][] board = new boolean[11][11][4];   // 방향을 확인할 추가 공간
     int[] dy = { 1, -1, 0, 0 }; // 상 하 우 좌
     int[] dx = { 0, 0, 1, -1 };

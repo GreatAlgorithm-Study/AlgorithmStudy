@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // 시간 복잡도 : O(n * p * m)
-class Solution {
+class HW_49993 {
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
 

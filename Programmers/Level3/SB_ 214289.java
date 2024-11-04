@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_214289 {
     static int INF = 100 * 1000 + 1;        // 가장 많은 에너지 소비
     public static int solution(int temperature, int t1, int t2, int a, int b, int[] onboard) {
         int N = onboard.length;

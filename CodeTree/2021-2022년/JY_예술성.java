@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class JY_예술성 {
     
     static int N;
     static int gNum;

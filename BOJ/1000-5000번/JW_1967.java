@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Main {
+public class JW_1967 {
 
     static ArrayList<ArrayList<int[]>> graph = new ArrayList<>();
     static boolean[] visited;

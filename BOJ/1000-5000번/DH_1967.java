@@ -5,7 +5,7 @@ import java.util.*;
  * 트리의 지름
  */
 
-public class BOJ1967 {
+public class DH_1967 {
     static class Node {
         int e, w;
         public Node(int e, int w) {

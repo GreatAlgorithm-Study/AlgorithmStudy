@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class SB_43163 {
     static int ans = Integer.MAX_VALUE;
 
     private static boolean canChange(String cur, String nxt) {  // 한글자만 다르기

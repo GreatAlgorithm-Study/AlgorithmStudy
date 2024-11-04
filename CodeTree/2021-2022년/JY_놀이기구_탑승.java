@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class JY_놀이기구_탑승 {
 
     static int N;
     static int[][] g;

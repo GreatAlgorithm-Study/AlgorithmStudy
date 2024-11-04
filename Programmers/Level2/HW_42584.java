@@ -1,4 +1,4 @@
-class Solution {
+class HW_42584 {
     public int[] solution(int[] prices) {
         int[] answer = new int[prices.length];
         for(int i=0; i<prices.length; i++){

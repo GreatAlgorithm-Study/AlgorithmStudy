@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 
 // 노드 개수 : n+2 (편의점 (n) + 집, 페스티벌)
 // BFS 시간 복잡도 O(V + E) -> O(n^2) 가능
-public class Main {
+public class HW_9205 {
     static int n; // 편의점 개수
     static class Point{
         int x, y;

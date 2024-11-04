@@ -1,5 +1,5 @@
 import java.util.Arrays;
-class Solution {
+class JW_214289 {
     public int solution(int temperature, int t1, int t2, int a, int b, int[] onboard) {
         int INF = Integer.MAX_VALUE >> 2;
         int len = onboard.length;
