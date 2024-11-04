@@ -2,7 +2,7 @@
 // 단계별로 진행하여 최단 경로 찾기 -> BFS
 import java.util.*;
 
-class Solution {
+class HW_43163 {
     public int solution(String begin, String target, String[] words) {
         Queue<String> queue = new LinkedList<>();
         boolean[] visited = new boolean[words.length];

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class JW_1911 {
 
     public static void main(String[] args) throws Exception {
         int n = read(), l = read();

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_43238 {
     private static boolean canCheck(long target, int[] times, int n) {
         long cnt = 0;
         for (int tm : times) {

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_214288 {
     static int[][] memo;
     static int[][] dp;
     static int INF = Integer.MAX_VALUE;

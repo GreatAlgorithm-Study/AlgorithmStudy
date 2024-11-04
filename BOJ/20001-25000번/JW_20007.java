@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class Main {
+public class JW_20007 {
 
     // 간선 정보를 저장할 객체
     static class Edge {

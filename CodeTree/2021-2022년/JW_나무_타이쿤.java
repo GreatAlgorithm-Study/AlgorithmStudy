@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_나무_타이쿤 {
 
     static int n;               
     static int[][] board;       // 격자 칸

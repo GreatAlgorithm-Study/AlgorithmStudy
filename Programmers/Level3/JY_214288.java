@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_214288 {
     
     static int N, K;
     static List<int[]> kList;

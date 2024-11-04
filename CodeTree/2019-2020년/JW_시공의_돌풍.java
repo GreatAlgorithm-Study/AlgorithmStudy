@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_시공의_돌풍 {
 
     static int n, m, t, p; // 세로, 가로, 시간, 시공의 돌풍의 위치
     // 윗 부분 회전에 맞추기 위해

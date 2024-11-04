@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class SB_42861 {
     static int[] parents;
 
     private static int find(int x) {

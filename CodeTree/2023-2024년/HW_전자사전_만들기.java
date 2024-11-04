@@ -2,7 +2,7 @@
 // N(100,000) * T(1,000) * 길이 (1,000) -> 완전탐색 불가
 import java.io.*;
 import java.util.*;
-public class Main {
+public class HW_전자사전_만들기 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

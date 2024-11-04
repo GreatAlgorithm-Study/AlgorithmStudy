@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_42898 {
     private static int MOD = 1000000007;
     public int solution(int m, int n, int[][] puddles) {
         int[][] dp = new int[n+1][m+1];

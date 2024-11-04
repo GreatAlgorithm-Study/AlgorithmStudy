@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_42861 {
     
     static int[] parents;
     

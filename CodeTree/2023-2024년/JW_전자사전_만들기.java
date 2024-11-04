@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_전자사전_만들기 {
 
     static String[] words; // 문자열을 저장할 배열
     static HashMap<String, Integer> dictionary = new HashMap<>(); // 각 문자열이 몇 번째로 입력이 들어왔는지 저장할 맵

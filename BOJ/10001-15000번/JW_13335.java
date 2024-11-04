@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Main {
+public class JW_13335 {
 
     public static void main(String[] args) throws Exception {
         int n = read(), w = read(), l = read();

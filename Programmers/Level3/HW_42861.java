@@ -4,7 +4,7 @@
 // 프림 알고리즘
 import java.util.*;
 
-class Solution {
+class HW_42861 {
     public class Point implements Comparable<Point>{
         int node, cost;
 

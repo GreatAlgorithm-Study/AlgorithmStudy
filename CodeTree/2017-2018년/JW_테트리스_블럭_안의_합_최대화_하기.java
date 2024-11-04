@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_테트리스_블럭_안의_합_최대화_하기 {
 
     static int n, m;
     // 도형을 회전, 반전으로 만들 수 있는 모든 경우를 저장

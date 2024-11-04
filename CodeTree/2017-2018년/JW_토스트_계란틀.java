@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_토스트_계란틀 {
 
     static int n, l, r;
     static int[][] toast;       // 계란의 양을 저장할 배열

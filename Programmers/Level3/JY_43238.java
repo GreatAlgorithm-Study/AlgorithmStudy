@@ -1,4 +1,4 @@
-class Solution {
+class JY_43238 {
     public long solution(int n, int[] times) {
         long answer = 0;
         int T = times.length;

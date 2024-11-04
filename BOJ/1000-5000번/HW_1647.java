@@ -6,24 +6,25 @@ import java.util.*;
 // O(N) or O(N log N)
 // 두 마을을 분리, 마을 사이의 길의 유지비 합을 최소로
 // 크루스칼 알고리즘 : 가장 적은 비용으로 모든 노드를 연결하기 위해 사용하는 알고리즘 O(E log V)
-class Edge implements Comparable<Edge>{int cost;
-    int start;
-    int end;
 
-
-    Edge(int start, int end, int cost){
-        this.start = start;
-        this.end = end;
-        this.cost = cost;
-    }
-
-    @Override
-    public int compareTo(Edge o){
-        return this.cost - o.cost;
-    }
-}
 
 public class HW_1647 {
+    static class Edge implements Comparable<Edge>{int cost;
+        int start;
+        int end;
+
+
+        Edge(int start, int end, int cost){
+            this.start = start;
+            this.end = end;
+            this.cost = cost;
+        }
+
+        @Override
+        public int compareTo(Edge o){
+            return this.cost - o.cost;
+        }
+    }
     static int N, M;
     static List<Edge> arr = new ArrayList<>();
     static int[] parent;

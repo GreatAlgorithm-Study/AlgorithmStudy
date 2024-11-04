@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-class Solution {
+class JW_43163 {
     public int solution(String begin, String target, String[] words) {
         Deque<String> dq = new ArrayDeque<>();
         dq.offer(begin);

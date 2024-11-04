@@ -5,7 +5,7 @@ import java.util.*;
 
 // 시간복잡도 : N=20,
 // 제한된 체력으로 최적의 기쁨을 얻는 문제 -> 배낭 -> 인사O or 인사 X -> 0-1 배낭 문제
-public class Main {
+public class HW_1535 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;

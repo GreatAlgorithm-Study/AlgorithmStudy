@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_42885 {
     public int solution(int[] people, int limit) {
         Arrays.sort(people);
 

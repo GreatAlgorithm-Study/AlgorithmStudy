@@ -1,5 +1,5 @@
 import java.util.Arrays;
-class Solution {
+class JW_42885 {
     public int solution(int[] people, int limit) {
         int answer = 0;
         Arrays.sort(people); // 투 포인터를 위한 정렬

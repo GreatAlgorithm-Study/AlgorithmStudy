@@ -1,4 +1,4 @@
-class Solution {
+class HW_12913 {
     int solution(int[][] land) {
 
         // 이전 행 기반 최대값을 기반으로하여 현재 행에서 어떤 칸을 밟을지 결정

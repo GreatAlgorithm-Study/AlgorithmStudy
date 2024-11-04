@@ -1,4 +1,4 @@
-class Solution {
+class JW_12913 {
     int solution(int[][] land) {
         int answer = 0;
         int n = land.length;

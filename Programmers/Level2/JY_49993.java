@@ -1,4 +1,4 @@
-class Solution {
+class JY_49993 {
     static int answer;
     public int solution(String skill, String[] skill_trees) {
         answer = 0;

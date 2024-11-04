@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_42885 {
     public int solution(int[] people, int limit) {
         int answer = 0;
         int N = people.length;

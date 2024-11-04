@@ -5,7 +5,7 @@ import java.util.*;
  * 공유기 설치
  */
 
-public class BOJ2110 {
+public class DH_2110 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

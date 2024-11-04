@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-class Solution {
+class JW_214288 {
     
     int minWaitingTime = Integer.MAX_VALUE; // 최소 대기 시간
     ArrayList<ArrayList<int[]>> refineReqs; // 기존의 상담 요청을 가공해서 저장할 리스트
