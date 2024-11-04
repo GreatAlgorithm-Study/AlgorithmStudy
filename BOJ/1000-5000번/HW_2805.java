@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 // 시간 복잡도 : N <= 10^6, M<= 10^9 -> 이분 탐색 시간 복잡도를 줄여줘야함
 // M미터의 나무를 집에 가져가기 위해서 절단기에 설정할 수 있는 높이의 최댓값을 구하기 (H)
-public class Main {
+public class HW_2805 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

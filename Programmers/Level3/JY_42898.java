@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_42898 {
     public int solution(int m, int n, int[][] puddles) {
         int answer = 0;
         int[][] dp = new int[n+1][m+1];

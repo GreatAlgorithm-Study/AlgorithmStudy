@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_12938 {
     public int[] solution(int n, int s) {
         int[] answer = new int[n];
         

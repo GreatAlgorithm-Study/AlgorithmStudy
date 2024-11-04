@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_방문_길이 {
     
     static int N, x, y;
     static Pos[][] g;

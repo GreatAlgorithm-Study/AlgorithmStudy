@@ -1,4 +1,4 @@
-class Solution {
+class JW_12938 {
     public int[] solution(int n, int s) {
         int[] answer = new int[n];
         // 1로만 이루어진 집합으로도 만들 수 없을 경우 -1 리턴

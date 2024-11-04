@@ -5,7 +5,7 @@ import java.util.*;
 사탕 가게
  */
 
-public class BOJ4781 {
+public class DH_4781 {
 	static class Candy {
 		int c, p;
 		public Candy(int c, int p) {

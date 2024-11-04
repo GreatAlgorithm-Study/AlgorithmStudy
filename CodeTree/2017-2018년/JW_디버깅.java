@@ -1,4 +1,4 @@
-public class Main {
+public class JW_디버깅 {
 
     static int n, m, h;
     static boolean[][] ladders;

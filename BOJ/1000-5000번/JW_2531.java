@@ -1,4 +1,4 @@
-public class Main {
+public class JW_2531 {
     public static void main(String[] args) throws Exception {
         int n = read(), d = read(), k = read(), c = read();
         int[] dishes = new int[n];          // 전체 초밥들의 종류를 저장할 배열

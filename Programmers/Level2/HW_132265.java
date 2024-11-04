@@ -6,7 +6,7 @@ import java.util.*;
 
 // 항상 궁금했던거.. 자바에서는 다른 원소를 어떻게 확인할까? - 중복 제거 : HashSet!
 
-class Solution {
+class HW_132265 {
     public int solution(int[] topping) {
         int answer = 0;
         int N = topping.length;

@@ -1,4 +1,4 @@
-class Solution {
+class JW_42898 {
     final int MOD = 1_000_000_007; // 나머지 연산
     public int solution(int m, int n, int[][] puddles) {
         int[][] board = new int[n + 1][m + 1];

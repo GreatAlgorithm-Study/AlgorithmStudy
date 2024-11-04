@@ -3,7 +3,7 @@
 // 최고의 집합을 구하는 문제
 // 최고의 집합 조건1 : 각 원소의 합이 S
 // 조건2 : 원소의 곱이 최대가 되는 집합
-class Solution {
+class HW_12938 {
     public int[] solution(int n, int s) {
         int[] answer = new int[n];
 

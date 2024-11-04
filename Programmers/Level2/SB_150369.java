@@ -7,7 +7,7 @@
 * 거꾸로 돌면서, n-1위치부터 커버가능한 왕복횟수를 세고있고, 앞으로 오면서 계속 커버가능한 왕복횟수 카운트 (누적합이기에 이전 처리내용까지 다 포함되어있음)
 * */
 
-class Solution {
+class SB_150369 {
     public long solution(int cap, int n, int[] deliveries, int[] pickups) {
         for (int i = n-2; i >=0; i--) {         // 누적합 구하기
             deliveries[i] += deliveries[i+1];

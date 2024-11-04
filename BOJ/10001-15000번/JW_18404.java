@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 
-public class Main {
+public class JW_18404 {
 
     // 나이트의 움직임
     static int[] dx = { -1, -2, -2, -1, 1, 2, 2, 1 };

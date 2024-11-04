@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class BOJ322 {
+public class JW_2631 {
 
     public static void main(String[] args) throws Exception {
         int n = read();

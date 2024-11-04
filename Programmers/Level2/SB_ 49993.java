@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class Solution {
+class SB_49993 {
     public int solution(String skill, String[] skill_trees) {
         Set<Character> sk = new HashSet<>();
         for (char c : skill.toCharArray()) {

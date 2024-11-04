@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_12913 {
     int solution(int[][] land) {
         int answer = 0;
         int N = land.length;

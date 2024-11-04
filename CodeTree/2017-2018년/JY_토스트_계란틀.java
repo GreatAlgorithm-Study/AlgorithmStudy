@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class Main {
+public class JY_토스트_계란틀 {
 
     static int N, L, R;
     static int[][] g;

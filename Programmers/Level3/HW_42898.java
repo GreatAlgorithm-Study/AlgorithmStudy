@@ -5,10 +5,10 @@ import java.io.*;
 
 // 오른쪽과 아래만 움직여서
 // 집에서 학교까지 갈 수 있는 최단경로의 개수
-class Solution {
+class HW_42898 {
     public int solution(int m, int n, int[][] puddles) {
         int dp[][] = new int[n+1][m+1];
-        int mod = 1000000007;
+        int MOD = 1000000007;
         for(int i=0; i<puddles.length; i++){
             dp[puddles[i][1]][puddles[i][0]] = -1;
         }

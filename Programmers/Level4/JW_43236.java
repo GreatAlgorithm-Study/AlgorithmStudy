@@ -1,5 +1,5 @@
 import java.util.Arrays;
-class Solution {
+class JW_43236 {
     public int solution(int distance, int[] rocks, int n) {
         int answer = 0;
         Arrays.sort(rocks);         // 이분 탐색을 위한 정렬

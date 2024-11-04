@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-class Solution {
+class JW_42861 {
     
     // 간선의 정보를 저장할 오브젝트
     class Edge {

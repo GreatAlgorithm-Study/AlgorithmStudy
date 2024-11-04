@@ -1,4 +1,4 @@
-class Solution {
+class JW_49993 {
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
         String regex = "[^" + skill + "]"; // 스킬 순서 외의 문자를 지우기 위한 정규표현식

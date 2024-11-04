@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 // 가장 인접한 두 공유기 사이의 최대 거리를 출력
 // 공유기 사이의 최소 거리를 mid값으로 두어 UpperBound
 
-public class Main {
+public class HW_2110 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

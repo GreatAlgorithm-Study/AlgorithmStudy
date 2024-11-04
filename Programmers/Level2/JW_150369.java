@@ -1,4 +1,4 @@
-class Solution {
+class JW_150369 {
     public long solution(int cap, int n, int[] deliveries, int[] pickups) {
         long answer = 0;
         // 배달할 수 있는 양과 가져올 수 있는 양의 누적

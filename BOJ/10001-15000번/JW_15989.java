@@ -1,4 +1,4 @@
-public class Main {
+public class JW_15989 {
 
     public static void main(String[] args) throws Exception {
         int t = read();
