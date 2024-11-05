@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_야근지수 {
     
     static class State implements Comparable<State>{
         int work;

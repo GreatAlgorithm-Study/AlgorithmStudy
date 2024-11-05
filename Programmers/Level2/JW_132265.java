@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-class Solution {
+class JW_132265 {
     public int solution(int[] topping) {
         int answer = 0;
         int len = topping.length;

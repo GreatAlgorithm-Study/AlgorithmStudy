@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class JY_나무_타이쿤 {
 
     static int N, M;
     static int[][] g;       // 리브로수

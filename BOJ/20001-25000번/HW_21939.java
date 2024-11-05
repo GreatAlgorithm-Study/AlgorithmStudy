@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class HW_21939 {
     public static class Problem implements Comparable<Problem> {
         int num;
         int level;

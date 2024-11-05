@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_42584 {
     static class State {
         int price, time;
         public State(int price, int time){

@@ -5,7 +5,7 @@ import java.util.*;
  * 나무 자르기
  */
 
-public class BOJ2805 {
+public class DH_2805 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

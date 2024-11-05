@@ -2,7 +2,7 @@
 // 게임 캐릭터가 지나간 길 중 캐릭터가 처음 걸어본 길의 길이 구하기
 // 좌표평면(-5, 5) 벗어나는 명령어는 무시
 import java.util.*;
-class Solution {
+class HW_49994 {
     private static boolean isValidMove(int nx, int ny){
         return 0 <= nx && nx < 11 && 0 <= ny && ny < 11;
     }

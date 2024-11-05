@@ -1,5 +1,5 @@
 import java.util.Stack;
-class Solution {
+class JW_154539 {
     public int[] solution(int[] numbers) {
         int len = numbers.length;
         int[] answer = new int[len];

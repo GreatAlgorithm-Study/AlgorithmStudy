@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_4386 {
 
     // 별과 별 사이의 거리를 저장할 객체
     static class Edge {

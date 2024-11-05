@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class JW_43238 {
     public long solution(int n, int[] times) {
         Arrays.sort(times); // 이분 탐색을 위한 정렬
         long l = 1, r = (long) times[times.length - 1] * n; // 가능한 최소, 최대 시간

@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_5021 {
 
     static HashMap<String, String[]> tree = new HashMap<>();   // 가계도
     static HashMap<String, Double> bloodMap = new HashMap<>(); // 혈통

@@ -1,4 +1,4 @@
-class Solution {
+class SB_12938 {
     public int[] solution(int n, int s) {
         if (s<n) return new int[]{-1};
         

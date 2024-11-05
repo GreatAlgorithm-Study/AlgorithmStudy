@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_예술성 {
 
     static int n;                       // 보드의 길이
     static int[][] board;               // 보드 저장할 배열

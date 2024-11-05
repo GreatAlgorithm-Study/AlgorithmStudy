@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Main {
+public class JW_불안한_무빙워크 {
 
     static class Pad {      // 무빙워크의 각 칸
         int safety;         // 해당 칸의 안정성

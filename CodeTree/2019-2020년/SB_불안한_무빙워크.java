@@ -107,7 +107,7 @@ public class SB_불안한_무빙워크 {
  * Deque<Node>가 아닌 배열로 수정
  */
 
-class Main {
+class SB_불안한_무빙워크_WA {
     static int N, K;
     static int startIdx = 0;
     static int cnt = 0, step = 0;

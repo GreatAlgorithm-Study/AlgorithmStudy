@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_뒤에_있는_큰_수_찾기 {
     
     static class State implements Comparable<State>{
         int num, idx;

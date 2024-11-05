@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class JW_놀이기구_탑승 {
 
     static int n;
     static int[] turn;      // 입장 순서를 저장할 배열

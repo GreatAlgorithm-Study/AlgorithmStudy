@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class HW_214288 {
     public int solution(int k, int n, int[][] reqs) {
         int answer = Integer.MAX_VALUE; // 최소 대기 시간을 저장할 변수
 

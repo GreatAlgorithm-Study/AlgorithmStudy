@@ -2,7 +2,7 @@
 // m년 이후 남아있는 리브로수의 총 높이의 합
 import java.util.*;
 import java.io.*;
-public class Main {
+public class HW_나무_타이쿤 {
     static int N, M;
     static int[][] map;
     static int[] dx = {0, -1, -1, -1, 0, 1, 1, 1};

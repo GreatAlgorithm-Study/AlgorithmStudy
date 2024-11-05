@@ -1,7 +1,7 @@
 import java.util.PriorityQueue;
 
-class Solution {
-    public int solution(int[] topping) {
+class JW_12927 {
+    public long solution(int[] topping, int[] works, int n) {
         long answer = 0;
         // work의 길이가 1일 경우
         if (works.length == 1)

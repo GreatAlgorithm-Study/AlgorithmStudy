@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class Main {
+public class JW_1647 {
 
     // Union Find를 구현하기 위한 배열 선언
     static int[] parent;

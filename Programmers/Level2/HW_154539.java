@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class HW_154539 {
     // 뒷큰수 : 신보다 뒤에 있는 숫자 중에서 자신보다 크면서 가장 가까이 있는 수
     // O(N^2) 불가 
     public int[] solution(int[] numbers) {

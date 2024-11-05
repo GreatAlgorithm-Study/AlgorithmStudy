@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_롤케이크_자르기 {
     public int solution(int[] topping) {
         int answer = 0;
         Map<Integer, Integer> right = new HashMap<>();

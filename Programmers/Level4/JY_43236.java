@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_43236 {
     public int solution(int distance, int[] rocks, int n) {
         int answer = 0;
         List<Integer> rList = new ArrayList<>();
