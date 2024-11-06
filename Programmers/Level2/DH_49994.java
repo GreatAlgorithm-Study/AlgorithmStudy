@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 /*
 방문 길이
  */

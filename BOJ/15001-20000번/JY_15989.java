@@ -1,5 +1,3 @@
-package day0924;
-
 import java.util.*;
 import java.io.*;
 

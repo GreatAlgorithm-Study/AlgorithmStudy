@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 import java.util.HashMap;
 
 public class SB_롤케이크_자르기 {

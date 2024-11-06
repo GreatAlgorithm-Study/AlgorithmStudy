@@ -1,5 +1,3 @@
-package day0909;
-
 import java.util.*;
 import java.io.*;
 public class JY_불안한_무빙워크 {

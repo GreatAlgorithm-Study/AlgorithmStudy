@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 import java.util.*;
 
 public class SB_49994_방문길이 {

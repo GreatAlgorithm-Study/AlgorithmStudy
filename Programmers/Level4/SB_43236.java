@@ -1,5 +1,3 @@
-package Programmers.Level4;
-
 import java.util.Arrays;
 
 public class SB_43236 {
