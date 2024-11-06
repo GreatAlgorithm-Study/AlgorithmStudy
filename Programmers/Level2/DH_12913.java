@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 /*
 땅따먹기
  */

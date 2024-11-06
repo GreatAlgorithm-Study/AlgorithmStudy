@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 import java.util.Arrays;
 
 public class SB_뒤에있는_큰_수_찾기 {
