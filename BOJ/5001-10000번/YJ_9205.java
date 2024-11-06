@@ -1,5 +1,3 @@
-package BOJ;
-
 import java.io.*;
 import java.util.ArrayDeque;
 import java.util.Deque;

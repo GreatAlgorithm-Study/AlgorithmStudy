@@ -1,5 +1,3 @@
-package Programmers.Level2;
-
 /*
 롤케이크_자르기
  */

@@ -1,5 +1,3 @@
-package Programmers.Level3;
-
 /*
 등굣길
  */
