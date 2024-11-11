@@ -1,4 +1,4 @@
-public class JW_24620 {
+public class JW_14620 {
     static int n;
     static int[][] board;
     static boolean[][] visited;

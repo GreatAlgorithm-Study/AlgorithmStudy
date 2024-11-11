@@ -1,4 +1,4 @@
-class Solution {
+class JY_64062 {
     public int solution(int[] stones, int k) {
         int answer = 0;
         

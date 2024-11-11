@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_43163 {
     
     static class State{
         String word;
