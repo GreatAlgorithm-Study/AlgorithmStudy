@@ -75,7 +75,7 @@ public class YJ_2955 {
                 if(gridCheck[i][j]){
                     continue;
                 }
-                if (findInGrid(i*3, j*3, target)) {    //i*3, j*3??
+                if (findInGrid(i*3, j*3, target)) {    //각 3*3 박스의 왼쪽모서리를 기준으로 시작
                     flag = true;
                 }
             }
@@ -88,7 +88,7 @@ public class YJ_2955 {
         int nr = -1;
         int nc = -1;
         int cnt = 0;
-
+        //sr,sc 3*3 박스 왼쪽꼭지점 시작점을 기준으로 서브그리드 순회
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if(rowCheck[i + sr] || colCheck[j + sc]){
