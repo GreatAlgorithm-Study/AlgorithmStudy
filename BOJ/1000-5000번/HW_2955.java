@@ -66,17 +66,16 @@ public class HW_2955 {
                 }
             }
         }
-        boolean flag = false;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (!square[i][j]) {
                     if (check(i * 3, j * 3, x)) {
-                        flag = true;
+                        return true;
                     }
                 }
             }
         }
-        return flag;
+        return false;
     }
 
     public static boolean check(int curX, int curY, int x) { // x : 배치하려는 숫자
