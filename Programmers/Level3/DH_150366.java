@@ -1,5 +1,9 @@
 import java.util.*;
 
+/*
+ * 표 병합
+ */
+
 class DH_150366 {
 	static class Point {
 		int r, c;
