@@ -79,19 +79,21 @@ class DH_150366 {
 	
 	static void unmerge(int r, int c) {
 		int key = markGroupNum[r][c];
+		String value = table[r][c];
 		
-		ArrayList<Point> removeSet = new ArrayList<Point>();
-		for(Point p: hashMap.get(key)) {
-			if(p.r == r && p.c == c) continue;
-			
-			int nextKey = p.r * 51 + p.c;
-			markGroupNum[p.r][p.c] = nextKey;
-			table[p.r][p.c] = null;
-			removeSet.add(p);
-			hashMap.get(nextKey).add(p);
+		hashMap.get(key).clear();
+		
+		for(int rr = 1; rr < table.length; rr++) {
+			for(int cc = 1; cc < table[0].length; cc++) {
+				if(markGroupNum[rr][cc] == key) {
+					int realKey = rr * 51 + cc;
+					table[rr][cc] = null;
+					markGroupNum[rr][cc] = realKey;
+					hashMap.get(realKey).add(new Point(rr, cc));
+				}
+			}
 		}
-		
-		hashMap.get(key).removeAll(removeSet);
+		table[r][c] = value;
 	}
 	
 	static void merge(int r1, int c1, int r2, int c2) {
@@ -121,11 +123,8 @@ class DH_150366 {
 	static void update(String value1, String value2) {
 		for(int r = 1; r < table.length; r++) {
 			for(int c = 1; c < table[0].length; c++) {
-				if(table[r][c] == null || !table[r][c].equals(value1)) continue;
-				
-				int key = markGroupNum[r][c];
-				
-				for(Point p: hashMap.get(key)) table[p.r][p.c] = value2;
+				if(table[r][c] != null && table[r][c].equals(value1))
+					table[r][c] = value2;
 			}
 		}
 	}
