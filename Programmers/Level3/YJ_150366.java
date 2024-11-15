@@ -122,7 +122,7 @@ public class YJ_150366 {
 
         table[num1] = table[num1].isBlank()? table[num2] : table[num1];
         parents[num2] = num1;
-        table[num2] = null;
+        table[num2] = "";
     }
 
     private int getIndex(int r, int c){
