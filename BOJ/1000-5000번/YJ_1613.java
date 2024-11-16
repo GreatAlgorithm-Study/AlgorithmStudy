@@ -20,7 +20,7 @@ public class YJ_1613 {
         for(int d=1; d<=n; d++){
             for(int i=1; i<=n; i++){
                 for(int j=1; j<=n; j++){
-                    if(graph[i][k] && graph[k][j]){   //경유가 가능할 경우 i > d > j 사건으로 연결됨
+                    if(graph[i][d] && graph[d][j]){   //경유가 가능할 경우 i > d > j 사건으로 연결됨
                         graph[i][j] = true;
                     }
                 }
