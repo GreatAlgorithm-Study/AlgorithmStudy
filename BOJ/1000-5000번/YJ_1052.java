@@ -15,7 +15,7 @@ public class YJ_1052 {
             while(Math.pow(2,count) < N){  //N개의 물병을 넘지 않는 최대 제곱
                 count++;
             }
-            N -= (int) Math.pow(2,count-1);   //해당 제곱수 만큼 반복하면 1개로 만들 수 있음
+            N -= (int) Math.pow(2,count-1);   //물병 1개를 만들 수 있는 최대양
             if(N == 0) {
                 break;
             }
