@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class HW_팩맨 {
+public class Main {
     static int m, t, pack_r, pack_c;
     static ArrayList<Integer>[][] index_arr = new ArrayList[4][4];
     static int[][] arr = new int[4][4];
@@ -14,16 +14,6 @@ public class HW_팩맨 {
     static Set<Integer> s;
     static ArrayList<monster> al = new ArrayList<>();
 
-    static class info {
-        String dir;
-        int eat;
-
-        info(String dir, int eat) {
-            this.dir = dir;
-            this.eat = eat;
-        }
-    }
-
     static class monster {
         int r, c, d;
 
@@ -32,6 +22,7 @@ public class HW_팩맨 {
             this.c = c;
             this.d = d;
         }
+
         public void move() {
             int temp_d = this.d;
             for (int i = 0; i < 8; i++) {
@@ -59,12 +50,10 @@ public class HW_팩맨 {
         m = Integer.parseInt(st.nextToken());
         t = Integer.parseInt(st.nextToken());
 
-        // 팩맨 초기 위치
         st = new StringTokenizer(br.readLine());
         pack_r = Integer.parseInt(st.nextToken()) - 1;
         pack_c = Integer.parseInt(st.nextToken()) - 1;
 
-        // 몬스터 초기 위치
         for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
             int r = Integer.parseInt(st.nextToken()) - 1;
@@ -111,7 +100,6 @@ public class HW_팩맨 {
                     if (dumy[i][j] > 0) dumy[i][j]--;
                 }
             }
-
             // 5. 몬스터 복제 완성
             for (monster m : copy) {
                 al.add(m);
@@ -121,16 +109,24 @@ public class HW_팩맨 {
     }
 
     private static void pack_move() {
-        PriorityQueue<info> pq = new PriorityQueue<>((a, b) -> {
-            if (a.eat == b.eat) return Integer.parseInt(a.dir) - Integer.parseInt(b.dir);
-            return b.eat - a.eat;
+        PriorityQueue<String> pq = new PriorityQueue<>((a, b) -> {
+            int eatA = Integer.parseInt(a.split(" ")[0]);
+            int eatB = Integer.parseInt(b.split(" ")[0]);
+            if (eatA == eatB) {
+                String dirA = a.split(" ")[1];
+                String dirB = b.split(" ")[1];
+                return dirA.compareTo(dirB); // 경로 사전순 정렬
+            }
+            return eatB - eatA; // 많은 몬스터 우선
         });
 
         for (int i = 0; i < 4; i++) {
             rec(pack_r, pack_c, i, 0, "", pq, mon);
         }
 
-        char[] route = pq.poll().dir.toCharArray();
+        // 우선순위 큐에서 가장 좋은 경로를 선택
+        String[] best = pq.poll().split(" ");
+        char[] route = best[1].toCharArray();
         for (char c : route) {
             int d = c - '0';
             pack_r += dir2[d][0];
@@ -142,23 +138,25 @@ public class HW_팩맨 {
         }
     }
 
-    private static void rec(int r, int c, int d, int eat, String dir, PriorityQueue<info> pq, int[][] m) {
+    private static void rec(int r, int c, int d, int eat, String dir, PriorityQueue<String> pq, int[][] m) {
         if (dir.length() == 3) {
-            pq.add(new info(dir, eat));
+            pq.add(eat + " " + dir); // 몬스터 수와 경로를 하나의 문자열로 저장
             return;
         }
 
         int nr = r + dir2[d][0];
         int nc = c + dir2[d][1];
         if (nr < 0 || nc < 0 || nr >= 4 || nc >= 4) return;
+
         if (mon[nr][nc] > 0) {
             for (int i = 0; i < 4; i++) {
                 int[][] copy = new int[4][4];
                 for (int j = 0; j < 4; j++) {
                     copy[j] = m[j].clone();
                 }
-                copy[nr][nc] = 0;
-                rec(nr, nc, i, eat + m[nr][nc], dir + d, pq, copy);
+                int monsters = m[nr][nc];
+                copy[nr][nc] = 0; // 몬스터 먹기
+                rec(nr, nc, i, eat + monsters, dir + d, pq, copy);
             }
         } else {
             for (int i = 0; i < 4; i++) {
@@ -166,4 +164,5 @@ public class HW_팩맨 {
             }
         }
     }
+
 }
