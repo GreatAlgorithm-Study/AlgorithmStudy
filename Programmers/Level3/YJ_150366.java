@@ -12,7 +12,6 @@ public class YJ_150366 {
         for(int i=0; i<MAX; i++){
             parents[i] = i;
         }
-        Arrays.fill(table,"");
 
         for(String command : commands){
             StringTokenizer st = new StringTokenizer(command);
@@ -21,13 +20,14 @@ public class YJ_150366 {
             switch(message){
                 case "UPDATE":
                     String data = st.nextToken();
-                    boolean isNumber = data!= null && data.chars().allMatch(Character::isDigit);
-                    if(isNumber){
+                    //알파벳 소문자와 숫자
+                    String data1 = st.nextToken();
+                    if(st.hasMoreTokens()){
                         update(Integer.parseInt(data),
-                                Integer.parseInt(st.nextToken()),
+                                Integer.parseInt(data1),
                                 st.nextToken());
                     }else{
-                        update(data,st.nextToken());
+                        update(data,data1);
                     }
                     break;
 
@@ -90,7 +90,7 @@ public class YJ_150366 {
         for(int i=0; i<table.length; i++){
             if(parents[i] == parent){
                 parents[i] = i;     //부모에서 벗어나기
-                table[i] = "";    //병합 해제 후 셀 초기화
+                table[i] = null;    //병합 해제 후 셀 초기화
             }
         }
         table[index] = value;
@@ -99,7 +99,7 @@ public class YJ_150366 {
     //PRINT r c
     public void print(int r, int c){
         int parent = find(getIndex(r, c));
-        String result = table[parent].isBlank()? "EMPTY" : table[parent];
+        String result = Objects.isNull(table[parent])? "EMPTY" : table[parent];
         prints.add(result);
     }
 
@@ -113,16 +113,16 @@ public class YJ_150366 {
 
     //셀 병합하기
     public void union(int num1, int num2){
-        num1 = find(num1);
-        num2 = find(num2);
+        num1 = find(num1);  //A
+        num2 = find(num2);  //A
 
         if(num1 == num2){   //이미 병합된 경우
             return;
         }
 
-        table[num1] = table[num1].isBlank()? table[num2] : table[num1];
+        table[num1] = Objects.isNull(table[num1])? table[num2] : table[num1];
         parents[num2] = num1;
-        table[num2] = "";
+        table[num2] = null;
     }
 
     private int getIndex(int r, int c){
