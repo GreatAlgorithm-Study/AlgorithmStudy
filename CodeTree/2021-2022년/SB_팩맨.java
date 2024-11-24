@@ -6,7 +6,7 @@ import java.util.*;
 /*
  * 팩맨 게임: 몬스터의 복제, 이동, 팩맨의 이동, 시체 소멸, 몬스터 부화 단계를 구현
  */
-public class st_팩맨 {
+public class SB_팩맨 {
     static int M, T; // 몬스터 수, 턴 수
     static final int N = 4; // 격자 크기 (4x4)
     static Monster pacMan;

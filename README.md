@@ -1,25 +1,45 @@
 # AlgorithmStudy
 
-<!-- <br>
+<br>
 
-## ✨🔫 8주차 말썽꾸러기 명단 🔫✨
+## ✨🔫 11주차 말썽꾸러기 명단 🔫✨
 <table>
     <tr>
         <td height="140px" align="center">
             <a href="https://github.com/Jewan1120">
-                <img src="https://avatars.githubusercontent.com/Jewan1120" width="140px" /> 
-                <br><br> 🤪 백제완 
+                <img src="https://github.com/user-attachments/assets/9a1e8762-e00a-4197-a27a-58d5d4a1014d" width="200px" /> 
+                <br><br> 🤪 lv3.백제완 
             </a>
+            <br><strong>지각하는거 좋아요~</strong>
         </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <strong>치킨은 제가 사겠습니다</strong><br>
+        <td height="140px" align="center">
+            <a href="https://github.com/Jewan1120">
+                <img src="https://github.com/user-attachments/assets/19703950-55dc-4fca-bd32-8f1adc68cbec" width="200px" /> 
+                <br><br> 🤪 lv3.이예진 
+            </a>
+            <br><strong>새로운 마음가짐으로 파이팅!</strong>
+        </td>
+        <td height="140px" align="center">
+            <a href="https://github.com/KodaHye">
+                <img src="https://avatars.githubusercontent.com/u/72763127?v=4" width="95px" /> 
+                <br><br> 🤪 lv1.고다혜 
+            </a>
+            <br><strong>요즘 꿈이랑 현실이랑 헷갈려요,,,<br>구분 잘 하겠습니다 ㅎㅎ !!!</strong>
         </td>
     </tr>
 </table>
 
-<br> -->
+<br>
+
+## 🤪 말썽꾸러기 점수
+- 모각코 지각시 `+1`
+- 코드리뷰 전(9:00)까지 문제 풀지 않았을 시 `+1`
+- 점수는 3점까지 누적된 후 리셋
+   - `말썽꾸러기 레벨 1` : 리드미 이름 박제
+   - `말썽꾸러기 레벨 2` : 캠 켜고 모각코 진행
+   - `말썽꾸러기 레벨 3` : 리드미 셀카 박제 
+
+<br>
 
 ## 👨‍💻 스터디원
 
@@ -40,9 +60,13 @@
 
 ## 🌟 스터디 진행 방식 🌟
 
+### 📒 [스터디 노션](https://www.notion.so/5a33eb1d51c0428c8460dfa45452f66b?pvs=4)
+
+<br>
+
 ### 🌱 모각코
 * 평일 2시간 진행 (월 ~ 금)
-    * `9시 ~ 11시` or `21시 ~ 23시`
+    * `9시 ~ 11시`
     * 아침 진행을 원칙으로 하나, 일정으로 인해 참여하지 못하는 경우 밤에 진행
 * 모각코 시간에 **하루치 문제를 모두 푸는 것**을 목표로 함
 * 화상미팅을 통해 **화면 공유**를 하며 각자 문제 풀이
@@ -52,7 +76,7 @@
 
 ### 💻 온라인 회의 (코드 리뷰)
 * 시간
-    * `금요일 저녁` or `토요일 아침` 예정
+    * `토요일 아침`
 * 방법
     * 한 문제 당 대표를 정해서 자신의 풀이 설명
     * 풀이 이후, 다른 풀이 방식으로 푼 사람이 있을 경우 자신의 코드 설명 (의견 교환)
