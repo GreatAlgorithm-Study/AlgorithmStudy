@@ -24,7 +24,7 @@ public class SB_28707 {
         return num;
     }
 
-    private static void dijkstra(int[] start) {     // 각 배열의 상태를 노드로 보는 다익스트라 진행
+    private static void bfs(int[] start) {     // 각 배열의 상태를 노드로 보는 다익스트라 진행
         Queue<int[]> que = new ArrayDeque<>();      // 배열 스왑을 진행해야하기에 큐 값은 배열로 가짐
         que.add(start);
 
@@ -70,7 +70,7 @@ public class SB_28707 {
         int start = arr2int(arr);       // 처음 시작 값 설정
         map.put(start, 0);
 
-        dijkstra(arr);                  // 다익스트라 실행
+        bfs(arr);                  // 다익스트라 실행
         Arrays.sort(arr);               // 정렬된 타겟 값 구하기
         int target = arr2int(arr);
 
