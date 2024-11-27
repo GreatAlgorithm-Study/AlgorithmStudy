@@ -27,7 +27,7 @@ public class YJ_생명과학부_랩_인턴 {
         }
 
         public void changeD(){
-            //위(1)↔아래(2) , 오른쪽(3)↔왼쪽(4)
+            //위(0)↔아래(1) , 오른쪽(2)↔왼쪽(3)
             this.d = this.d%2 == 0? this.d+1 : this.d-1;
         }
 
@@ -69,7 +69,7 @@ public class YJ_생명과학부_랩_인턴 {
                 search(i);
                 moveMolds();
             }
-            //인턴이 채취한 곰팡9이 크기
+            //인턴이 채취한 곰팡이 크기
             System.out.println(inventory.stream().mapToInt(mold -> mold.b).sum());
         }
     }
