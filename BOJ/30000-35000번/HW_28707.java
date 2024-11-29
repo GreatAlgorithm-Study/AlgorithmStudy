@@ -4,7 +4,7 @@
 // 시간복잡도 : N<=8, 8!=40,320 -> 다익스트라O
 import java.util.*;
 import java.io.*;
-public class Main {
+public class HW_28707 {
     static int N, M;
     static class Node implements Comparable<Node>{ // 배열 자체를 노드로
         int[] arr; // 배열 상태
