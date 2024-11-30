@@ -1,4 +1,4 @@
-class Solution {
+class SB_64062 {
     private static boolean canGo(int[] stones, int k, int num) {
         int seq = 0;
         for (int s : stones) {

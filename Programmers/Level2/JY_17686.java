@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_17686 {
     
     static class File implements Comparable<File> {
         String name, head, tail;

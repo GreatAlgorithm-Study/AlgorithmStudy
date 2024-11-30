@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class JW_60062 {
     int w, d;
     int answer = Integer.MAX_VALUE;
 

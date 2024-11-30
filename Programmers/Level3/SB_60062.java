@@ -1,4 +1,4 @@
-class Solution {
+class SB_60062 {
     static int N;
     static int[] Dist, expandWeak;
     static int M;

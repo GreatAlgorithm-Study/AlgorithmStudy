@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_150366 {
     
     static final int N = 51;
     static String[][] g;

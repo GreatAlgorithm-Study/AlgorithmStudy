@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class HW_팩맨 {
     static int m, t, pack_r, pack_c;
     static ArrayList<Integer>[][] index_arr = new ArrayList[4][4];
     static int[][] arr = new int[4][4];

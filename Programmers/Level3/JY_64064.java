@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class JY_64064 {
     
     static Set<Set<String>> uSet;
     static Set<String> bSet;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_42884 {
     public int solution(int[][] routes) {
         int answer = 0;
         

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_181188 {
     public int solution(int[][] targets) {
         int answer = 0;
         

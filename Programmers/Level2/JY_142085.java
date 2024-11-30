@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class JY_142085 {
     public int solution(int n, int k, int[] enemy) {
         int answer = enemy.length;
         // 무적권 개수 == 적의 수이면 모든 라운드 진행 가능

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SB_17686 {
     static List<File> fileList = new ArrayList<>();
     private static File setFile(String f, int order) {
         char[] cf = f.toCharArray();
