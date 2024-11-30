@@ -2,29 +2,15 @@
 
 <br>
 
-## ✨🔫 11주차 말썽꾸러기 명단 🔫✨
+## ✨🔫 12주차 말썽꾸러기 명단 🔫✨
 <table>
     <tr>
         <td height="140px" align="center">
-            <a href="https://github.com/Jewan1120">
-                <img src="https://github.com/user-attachments/assets/9a1e8762-e00a-4197-a27a-58d5d4a1014d" width="200px" /> 
-                <br><br> 🤪 lv3.백제완 
-            </a>
-            <br><strong>지각하는거 좋아요~</strong>
-        </td>
-        <td height="140px" align="center">
-            <a href="https://github.com/Jewan1120">
-                <img src="https://github.com/user-attachments/assets/19703950-55dc-4fca-bd32-8f1adc68cbec" width="200px" /> 
-                <br><br> 🤪 lv3.이예진 
+            <a href="https://github.com/yeahdy">
+                <img src="https://avatars.githubusercontent.com/u/86579541?v=4" width="95px" /> 
+                <br><br> 🤪 lv1.이예진 
             </a>
             <br><strong>새로운 마음가짐으로 파이팅!</strong>
-        </td>
-        <td height="140px" align="center">
-            <a href="https://github.com/KodaHye">
-                <img src="https://avatars.githubusercontent.com/u/72763127?v=4" width="95px" /> 
-                <br><br> 🤪 lv1.고다혜 
-            </a>
-            <br><strong>요즘 꿈이랑 현실이랑 헷갈려요,,,<br>구분 잘 하겠습니다 ㅎㅎ !!!</strong>
         </td>
     </tr>
 </table>
