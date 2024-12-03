@@ -2,13 +2,35 @@
 name: SQL 풀이 모음 템플릿
 about: SQL 풀이 모음 템플릿 입니다
 title: "[X주차_SQL] SQL 풀이 모음"
-labels: ''
+labels: 'sql'
 assignees: ''
 
 ---
+추천 문제와 전 주의 본인 순번 전 사람이 풀었던 문제입니다.
 
-- SQL 유형: `SELECT` `SUM,MAX,MIN` `GROUP BY` `IS NULL` `JOIN` `String,Date` `OVER()` `REGEX` 유형 중 택 1
-- 코멘트 템플릿 하단 텍스트 복사해서 사용 해 주세요💌
+고다혜: 
+[]()
+[]()
+
+배수빈: 
+[]()
+[]()
+
+백제완: 
+[]()
+[]()
+
+이예진:
+[]()
+[]()
+
+이지영:
+[]()
+[]()
+
+이혜원:
+[]()
+[]()
 
 ```text
 ## 문제: [문제명](링크)

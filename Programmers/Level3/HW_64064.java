@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class HW_64064 {
     static Set<Set<String>> resultSet; // 제재 아이디 목록을 저장할 집합
     static List<List<String>> matchedList; // banned_id와 매칭되는 user_id 목록
 

@@ -1,5 +1,6 @@
 class HW_60062 {
     public int solution(int n, int[] weak, int[] dist) {
+        int answer = 0;
         int length = weak.length;
 
         int[] extendedWeak = new int[length * 2]; // 원형 배열을 선형 배열로 변환
@@ -21,5 +22,7 @@ class HW_60062 {
             }
             minFriends = Math.min(minFriends, count); // 최소 친구 수 갱신
         }
+
+        return answer;
     }
 }
