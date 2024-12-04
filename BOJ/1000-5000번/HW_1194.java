@@ -63,11 +63,11 @@ public class HW_1194 {
                     continue;
                 }
 
-                if ('a' <= board[nx][ny] && board[nx][ny] <= 'z') {
+                if ('a' <= board[nx][ny] && board[nx][ny] <= 'f') {
                     nkey |= (1 << (board[nx][ny] - 'a')); // 새로운 열쇠 획득
                 }
 
-                if ('A' <= board[nx][ny]&& board[nx][ny] <= 'Z') {
+                if ('A' <= board[nx][ny]&& board[nx][ny] <= 'F') {
                     if ((nkey & (1 << (board[nx][ny] - 'A'))) == 0) {
                         continue; // 열쇠 없으면 이동 불가
                     }
