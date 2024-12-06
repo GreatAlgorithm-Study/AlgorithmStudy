@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class HW_150367 {
     public int[] solution(long[] numbers) {
         int[] result = new int[numbers.length];
 
