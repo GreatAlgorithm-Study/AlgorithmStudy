@@ -1,21 +1,5 @@
 # AlgorithmStudy
 
-<br>
-
-## ✨🔫 12주차 말썽꾸러기 명단 🔫✨
-<table>
-    <tr>
-        <td height="140px" align="center">
-            <a href="https://github.com/yeahdy">
-                <img src="https://avatars.githubusercontent.com/u/86579541?v=4" width="95px" /> 
-                <br><br> 🤪 lv1.이예진 
-            </a>
-            <br><strong>새로운 마음가짐으로 파이팅!</strong>
-        </td>
-    </tr>
-</table>
-
-<br>
 
 ### 🤪 말썽꾸러기 점수
 - 모각코 지각시 `+1`
