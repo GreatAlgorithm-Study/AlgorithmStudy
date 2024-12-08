@@ -1,5 +1,22 @@
 # AlgorithmStudy
 
+<br>
+
+## ✨🔫 11주차 말썽꾸러기 명단 🔫✨
+
+<table>
+    <tr>
+        <td height="140px" align="center">
+            <a href="https://github.com/Jewan1120">
+                <img src="https://avatars.githubusercontent.com/Jewan1120" width="140px" /> 
+                <br><br> 🤪 백제완 
+            </a>
+            <br><strong>충전기 고치고! 모닝콜 잘듣기!</strong>
+        </td>
+    </tr>
+</table>
+
+<br>
 
 ### 🤪 말썽꾸러기 점수
 - 모각코 지각시 `+1`
