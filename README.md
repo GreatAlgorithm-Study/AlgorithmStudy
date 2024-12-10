@@ -2,15 +2,16 @@
 
 <br>
 
-## ✨🔫 12주차 말썽꾸러기 명단 🔫✨
+## ✨🔫 14주차 말썽꾸러기 명단 🔫✨
+
 <table>
     <tr>
         <td height="140px" align="center">
-            <a href="https://github.com/yeahdy">
-                <img src="https://avatars.githubusercontent.com/u/86579541?v=4" width="95px" /> 
-                <br><br> 🤪 lv1.이예진 
+            <a href="https://github.com/Jewan1120">
+                <img src="https://avatars.githubusercontent.com/Jewan1120" width="140px" /> 
+                <br><br> 🤪 백제완 
             </a>
-            <br><strong>새로운 마음가짐으로 파이팅!</strong>
+            <br><strong>충전기 고치고! 모닝콜 잘듣기!</strong>
         </td>
     </tr>
 </table>

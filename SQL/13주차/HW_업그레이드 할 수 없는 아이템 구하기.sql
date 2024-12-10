@@ -1,0 +1,8 @@
+-- 업그레이드 할 수 없는 아이템 찾기
+-- A 아이템이 B아이템을 부모로 가지지 않아야함
+-- ITEM_ID != PARENT_ITEM_ID 행 찾기
+SELECT i.ITEM_ID, i.ITEM_NAME, i.RARITY
+FROM ITEM_INFO i
+         LEFT JOIN ITEM_TREE t ON i.ITEM_ID = t.PARENT_ITEM_ID
+WHERE t.PARENT_ITEM_ID IS NULL
+ORDER BY i.ITEM_ID DESC;
