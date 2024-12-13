@@ -18,13 +18,13 @@ public class YJ_118669 {
 
     List<ArrayList<Node>> graph = new ArrayList<>();
     int[] table;
-    Set<Integer> summitSet = new HashSet<>();
+    List<Integer> summitSet = new ArrayList<>();
     public int[] solution(int n, int[][] paths, int[] gates, int[] summits) {
-        //산봉우리 중복제거
+        //산봉우리 확인용
         for(int mountain : summits){
             summitSet.add(mountain);
         }
-        //최소 가중치 테이블 초기화
+        //최소 intensity 테이블 초기화
         table = new int[n+1];
         Arrays.fill(table, Integer.MAX_VALUE);
         //그래프 모델링
@@ -44,7 +44,7 @@ public class YJ_118669 {
         int[] answer = {0,Integer.MAX_VALUE};
         for (int mountain : summits) {
             int intensity = answer[1];
-            if (table[mountain] < intensity) {  //intensity의 최솟값
+            if (table[mountain] < intensity) {  //최소 intensity 구하기
                 answer[0] = mountain;
                 answer[1] = table[mountain];
             } else if (table[mountain] == intensity && mountain < answer[0]) {
@@ -54,8 +54,7 @@ public class YJ_118669 {
         return answer;
     }
 
-    // 휴식 없이 이동해야 하는 시간 중 가장 긴 시간을 해당 등산코스의 intensity (가중치)
-    // 출입구는 처음과 끝에 한 번씩, 산봉우리는 한 번만 포함 -> 출발 > 산봉우리 까지의 거리
+    // 출입구는 처음과 끝에 한 번씩, 산봉우리는 한 번만 포함 -> 출발 > 산봉우리 까지의 단방향 거리만 구하면됨
     void dijkstra(int[] gates){
         PriorityQueue<Node> pq = new PriorityQueue<>();
         //출발지점으로 초기화
@@ -78,8 +77,8 @@ public class YJ_118669 {
 
             for(Node next : graph.get(index)){
                 int nextIndex = next.index;
-                int cost = Math.max(table[index], next.distance);
-                if(table[nextIndex] > cost){
+                int cost = Math.max(table[index], next.distance);   //현재 지점에서 다음 지점으로 갈 때 가장 긴 등산코스(intensity)를 찾기
+                if(table[nextIndex] > cost){    //그 중 최소 intensity 찾기
                     table[nextIndex] = cost;
                     pq.offer(new Node(nextIndex, cost));
                 }
