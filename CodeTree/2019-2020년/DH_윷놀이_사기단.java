@@ -8,14 +8,11 @@ public class DH_윷놀이_사기단 {
 	static class Horse {
 		int r, c;
 		public Horse() {}
-		@Override
-		public String toString() {
-			return "Horse [r=" + r + ", c=" + c + "]";
-		}
 	}
 	static int maxResult;
 	static boolean[] v;
 	static Horse[] horses;
+	static Set<Integer> moreOne;
 	
 	public static void main(String[] args) throws Exception {
 		horses = new Horse[5];
@@ -28,6 +25,14 @@ public class DH_윷놀이_사기단 {
 			{20, 22, 24, 25, 30, 35, 40, 41},
 			{30, 28, 27, 26, 25, 30, 35, 40, 41}};
 			
+		moreOne = new HashSet<Integer>();
+		moreOne.add(16);
+		moreOne.add(22);
+		moreOne.add(24);
+		moreOne.add(26);
+		moreOne.add(28);
+		moreOne.add(30);
+
 		initInput();
 		solution();
 		System.out.println(maxResult);
@@ -55,6 +60,7 @@ public class DH_윷놀이_사기단 {
 			int nr = currentR;
 			int nc = currentC + arr[depth];
 			
+			boolean canGo = true;
 			if(nc >= map[nr].length) {
 				nc = map[nr].length - 1;
 				v[i] = true;
@@ -65,21 +71,28 @@ public class DH_윷놀이_사기단 {
 					nc = 0;
 				}
 				
-				boolean canGo = true;
 				
 				for(int j = 1; j < 5; j++) {
 					if(j == i) continue;
-					if(map[horses[i].r][horses[i].c] == 0 || map[horses[j].r][horses[j].c] == 0) continue;
-					if(map[horses[i].r][horses[i].c] == 41 || map[horses[j].r][horses[j].c] == 41) continue;
-					
-					if(nr == horses[j].r && nc == horses[j].c) {
-						canGo = false;
-						break;
+					if(map[nr][nc] == 0 || map[horses[j].r][horses[j].c] == 0) continue;
+					if(map[nr][nc] == 41 || map[horses[j].r][horses[j].c] == 41) continue;
+
+					if(moreOne.contains(map[nr][nc])) {
+						if(horses[j].r == nr && horses[j].c == nc) {
+							canGo = false;
+							break;
+						}
+					}  else {
+						if(map[nr][nc] == map[horses[j].r][horses[j].c]) {
+							canGo = false;
+							break;
+						}
 					}
 				}
 				
-				if(!canGo) continue;
 			}
+			
+			if(!canGo) continue;
 			
 			horses[i].r = nr;
 			horses[i].c = nc;
