@@ -26,7 +26,7 @@ public class HW_윷놀이_사기단 {
     }
     private static void simulation(){
         // 윷놀이판 이동 경로 설정
-        for(int i=0; i<17; i++){
+        for(int i=0; i<20; i++){ // 직선 경로 이동 처리
             for(int j=1; j<=5; j++){ // 윷 놀이 1~5칸 이동 가능
                 move[i][j] = i+j;
             }
