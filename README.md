@@ -1,28 +1,5 @@
 # AlgorithmStudy
 
-
-## ✨🔫 15주차 말썽꾸러기 명단 🔫✨
-<table>
-    <tr>
-        <td height="140px" align="center">
-            <a href="https://github.com/yeahdy">
-                <img src="https://github.com/user-attachments/assets/0e426653-8674-4341-9be4-edb2a179ca85" width="200px" /> 
-                <br><br> 🤪 lv3.이예진 
-            </a>
-            <br><strong>제주도에서 둘이 만나면 어색하려나..?</strong>
-        </td>
-        <td height="140px" align="center">
-            <a href="https://github.com/KodaHye">
-                <img src="https://github.com/user-attachments/assets/1b1a5523-f3c9-45c6-9a2a-a8286cb563c4" width="200px" /> 
-                <br><br> 🤪 lv3.고다혜 
-            </a>
-            <br><strong>아니요,,, 예진님 좋아요,,</strong>
-        </td>
-    </tr>
-</table>
-
-<br>
-
 ### 🤪말썽꾸러기 점수
 - 모각코 지각시 `+1`
 - 코드리뷰 전(9:00)까지 문제 풀지 않았을 시 `+1`
