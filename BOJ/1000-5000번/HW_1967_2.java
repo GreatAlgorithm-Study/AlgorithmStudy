@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-class BOJ_1967_2{
+class HW_1967_2{
     static List<Node>[] graph;
     static boolean[] visited;
     static int ans=0; // 트리의 지름
-    static int farNode=0; // 가장 먼 노드
+    static int farNode=1; // 가장 먼 노드
     static class Node{
         int e, weight;
         Node (int e, int weight){
@@ -22,11 +22,6 @@ class BOJ_1967_2{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int n = Integer.parseInt(br.readLine()); // 노드의 개수
-
-        if(n==1){ // NullPointer, 노드가 1개일 때 트리 지름 0
-            System.out.println(0);
-            return;
-        }
 
         graph = new ArrayList[n+1];
         visited = new boolean[n + 1];
