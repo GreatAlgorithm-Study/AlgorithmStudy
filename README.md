@@ -6,7 +6,7 @@
 - 점수는 3점까지 누적된 후 리셋
    - `말썽꾸러기 레벨 1` : 리드미 이름 박제
    - `말썽꾸러기 레벨 2` : 캠 켜고 모각코 진행
-   - `말썽꾸러기 레벨 3` : 리드미 셀카 박제 
+   - `말썽꾸러기 레벨 3` : 리드미 셀카 게시 
 
 <br>
 
@@ -17,9 +17,7 @@
 | 고다혜 |[@KodaHye](https://github.com/KodaHye)|
 | 배수빈 |[@baexxbin](https://github.com/baexxbin)|
 | 백제완 |[@Jewan1120](https://github.com/Jewan1120)|
-| 이예진 |[@yeahdy](https://github.com/yeahdy)|
 | 이지영 |[@yeongleej](https://github.com/yeongleej)|
-| 이혜원 |[@icegosimperson](https://github.com/icegosimperson)|
 
 
 <br>
