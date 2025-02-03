@@ -37,7 +37,7 @@ public class JW_2개의_사탕 {
 
     private static int bfs(int sr, int sb) {
         Deque<int[]> dq = new ArrayDeque<>();
-        dq.offer(new int[] { sr, sb }); // 빨간 공의 인덱스, 파란 공의 인덱스스
+        dq.offer(new int[] { sr, sb });
         visited[sr][sb] = true;
         int time = 0;
         while (!dq.isEmpty()) {
@@ -45,13 +45,38 @@ public class JW_2개의_사탕 {
             while (t-- > 0) {
                 int[] cur = dq.poll();
                 int r = cur[0], b = cur[1];
-                // 파란 공이 먼저 들어갔다면
+                // 파란 사탕이 들어갔다면 다음 탐색
                 if (b == g)
                     continue;
-                // 빨간 공이 들어갔다면 종료
+                // 빨간 사탕이 들어갔다면 종료
                 if (r == g)
                     return time;
-       절
+                for (int i = 0; i < 4; i++) {
+                    int[] next = move(i, r, b);
+                    // 잘못된 움직임일 경우 다음 탐색
+                    if ((next[0] == -1 && next[1] == -1) || visited[next[0]][next[1]])
+                        continue;
+                    visited[next[0]][next[1]] = true;
+                    dq.offer(next);
+                }
+            }
+            time++;
+            if(time > 10)
+                return -1;
+        }
+        return -1;
+    }
+
+    private static int[] move(int dir, int r, int b) {
+        int nr = goStraight(dir, r), nb = goStraight(dir, b); // 상자를 기울인 방향으로 직선 운동
+        // 두 인덱스가 겹쳤을 경우
+        if (nr == nb) {
+            // 구멍에 빠졌다면 → 두 사탕이 모두 구멍에 빠짐
+            if (nr == g)
+                return new int[] { -1, -1 }; // 잘못된 움직임을 알려주기 위한 반환
+            // 상하좌우
+            // 부딪혔을 경우, 인덱스를 조정
+            switch (dir) {
             case 0:
                 if (r < b) nb += m;
                 else nr += m;
@@ -77,7 +102,6 @@ public class JW_2개의_사탕 {
     private static int goStraight(int dir, int cur) {
         int y = cur / m, x = cur % m;
         int gy = g / m, gx = g % m;
-        // 다음 위치로 이동할 수 있다면
         while (!board[y + dy[dir]][x + dx[dir]]) {
             y += dy[dir];
             x += dx[dir];
