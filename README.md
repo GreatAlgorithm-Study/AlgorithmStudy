@@ -1,29 +1,12 @@
 # AlgorithmStudy
 
-<br>
-
-## ✨🔫 12주차 말썽꾸러기 명단 🔫✨
-<table>
-    <tr>
-        <td height="140px" align="center">
-            <a href="https://github.com/yeahdy">
-                <img src="https://avatars.githubusercontent.com/u/86579541?v=4" width="95px" /> 
-                <br><br> 🤪 lv1.이예진 
-            </a>
-            <br><strong>새로운 마음가짐으로 파이팅!</strong>
-        </td>
-    </tr>
-</table>
-
-<br>
-
-### 🤪 말썽꾸러기 점수
+### 🤪말썽꾸러기 점수
 - 모각코 지각시 `+1`
 - 코드리뷰 전(9:00)까지 문제 풀지 않았을 시 `+1`
 - 점수는 3점까지 누적된 후 리셋
    - `말썽꾸러기 레벨 1` : 리드미 이름 박제
    - `말썽꾸러기 레벨 2` : 캠 켜고 모각코 진행
-   - `말썽꾸러기 레벨 3` : 리드미 셀카 박제 
+   - `말썽꾸러기 레벨 3` : 리드미 셀카 게시 
 
 <br>
 
@@ -34,9 +17,7 @@
 | 고다혜 |[@KodaHye](https://github.com/KodaHye)|
 | 배수빈 |[@baexxbin](https://github.com/baexxbin)|
 | 백제완 |[@Jewan1120](https://github.com/Jewan1120)|
-| 이예진 |[@yeahdy](https://github.com/yeahdy)|
 | 이지영 |[@yeongleej](https://github.com/yeongleej)|
-| 이혜원 |[@icegosimperson](https://github.com/icegosimperson)|
 
 
 <br>
