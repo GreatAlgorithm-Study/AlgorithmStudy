@@ -1,0 +1,8 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/276035
+-- FrontEnd 개발자 찾기
+SELECT DISTINCT A.ID, A.EMAIL, A.FIRST_NAME, A.LAST_NAME
+FROM DEVELOPERS A
+JOIN SKILLCODES B
+ON A.SKILL_CODE & B.CODE = B.CODE
+WHERE CATEGORY = "Front End"
+ORDER BY A.ID
