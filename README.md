@@ -17,6 +17,7 @@
 | 고다혜 |[@KodaHye](https://github.com/KodaHye)|
 | 배수빈 |[@baexxbin](https://github.com/baexxbin)|
 | 백제완 |[@Jewan1120](https://github.com/Jewan1120)|
+| 손지민 |[@jmxx219](https://github.com/jmxx219)|
 | 이지영 |[@yeongleej](https://github.com/yeongleej)|
 
 
