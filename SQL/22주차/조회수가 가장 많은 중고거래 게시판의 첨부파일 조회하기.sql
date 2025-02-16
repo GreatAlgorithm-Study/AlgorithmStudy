@@ -1,0 +1,11 @@
+SELECT CONCAT("/home/grep/src/", a.BOARD_ID, "/", a.FILE_ID, a.FILE_NAME, a.FILE_EXT) `FILE_PATH`
+FROM USED_GOODS_FILE a
+         JOIN (
+    SELECT *
+    FROM (
+             SELECT BOARD_ID, RANK() OVER(ORDER BY VIEWS DESC) `RNK`
+             FROM USED_GOODS_BOARD
+         ) subquery
+    WHERE RNK = 1
+) b ON a.BOARD_ID = b.BOARD_ID
+ORDER BY FILE_ID DESC
