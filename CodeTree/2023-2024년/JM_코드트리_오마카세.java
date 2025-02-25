@@ -69,8 +69,7 @@ public class JM_코드트리_오마카세 {
 	static int L; // 초밥 벨트의 길이
 	static int Q; // 명령의 수
 	static Map<String, Person> persons;
-	static List<Sushi> sushi = new ArrayList<>();
-	static List<Integer> photos;
+	static List<Sushi> sushi;
 	static List<Time> times;
 
 	private static List<Time> findOutTime() {
@@ -131,7 +130,6 @@ public class JM_코드트리_오마카세 {
 
 		persons = new HashMap<>();
 		sushi = new ArrayList<>();
-		photos = new ArrayList<>();
 		times = new ArrayList<>();
 
 		for (int i = 0; i < Q; i++) {
@@ -154,7 +152,6 @@ public class JM_코드트리_오마카세 {
 			}
 			else {
 				int t = Integer.parseInt(st.nextToken());
-				photos.add(t);
 				times.add(new Time(t, 'T', false));
 			}
 		}
