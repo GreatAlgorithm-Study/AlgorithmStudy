@@ -5,7 +5,7 @@ class JM_148652 {
 			if(i % 5 == 2) return 2;
 			i /= 5;
 		}
-		return (int) i % 5;
+		return (int) i;
 	}
 
 	public static int solution(int n, long l, long r) {
