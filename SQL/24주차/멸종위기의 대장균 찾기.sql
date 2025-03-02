@@ -1,0 +1,21 @@
+WITH recursive CTE AS (
+    SELECT id, parent_id, 1 as GENERATION
+    FROM ECOLI_DATA
+    WHERE PARENT_ID IS NULL
+
+    UNION ALL
+
+    SELECT b.id, b.parent_id, a.generation + 1
+    FROM CTE a
+             JOIN ECOLI_DATA b ON a.id = b.parent_id
+)
+
+SELECT COUNT(a.ID) as COUNT, a.GENERATION
+FROM CTE a
+WHERE ID NOT IN (
+    SELECT DISTINCT PARENT_ID
+    FROM CTE
+    WHERE PARENT_ID IS NOT NULL
+    )
+GROUP BY a.GENERATION
+ORDER BY a.GENERATION
