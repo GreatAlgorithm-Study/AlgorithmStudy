@@ -14,8 +14,6 @@ public class JM_32070 {
 		}
 	}
 	static int N;
-	static int[] A;
-	static int[] B;
 	static Color[][] colors;
 	static int[] boxParent;
 	static int[] subBoxCount;
